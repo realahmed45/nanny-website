@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Nanny in Paradise">
+  <title>Nanny in Paradise</title>
+  <defs>
+    <!-- Silver, to match the bubbles the page floats on. -->
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0"    stop-color="#FDFEFE"/>
+      <stop offset="0.5"  stop-color="#E3E9F0"/>
+      <stop offset="1"    stop-color="#BCC7D6"/>
+    </linearGradient>
+    <linearGradient id="silverRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#A9B7C8"/>
+    </linearGradient>
+    <!-- The warm accent: the child held inside the arc. -->
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6BA4E0"/>
+      <stop offset="1" stop-color="#2C5F97"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bubble backdrop, kept pale so the mark on top stays the subject. -->
+  <circle cx="80" cy="80" r="74" fill="url(#silver)"/>
+  <circle cx="80" cy="80" r="74" fill="none" stroke="url(#silverRim)" stroke-width="2.5"/>
+  <!-- The highlight that makes a sphere read as a bubble. -->
+  <ellipse cx="55" cy="46" rx="24" ry="16" fill="#FFFFFF" opacity="0.7" transform="rotate(-28 55 46)"/>
+
+  <!-- A sheltering arc: the adult, drawn as an embrace rather than a body.
+       Dark enough to hold its own against the silver behind it. -->
+  <path d="M36 106a44 44 0 0 1 88 0" fill="none" stroke="#2F3D4F" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- The child, held inside the arc. -->
+  <circle cx="80" cy="84" r="17" fill="url(#warm)"/>
+  <circle cx="80" cy="84" r="17" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <ellipse cx="73.5" cy="77.5" rx="5.5" ry="3.8" fill="#FFFFFF" opacity="0.5" transform="rotate(-25 73.5 77.5)"/>
+
+  <!-- Two small bubbles rising, echoing the page background. -->
+  <circle cx="122" cy="44" r="7.5" fill="#FFFFFF" opacity="0.9" stroke="#A9B7C8" stroke-width="1.4"/>
+  <circle cx="135" cy="62" r="4.4" fill="#FFFFFF" opacity="0.85" stroke="#A9B7C8" stroke-width="1.1"/>
+</svg>
