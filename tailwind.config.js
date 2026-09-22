@@ -4,45 +4,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Silver, not blue: the page is white with silver bubbles, so the
-        // palette is built from neutral greys with one soft blue to warm it.
-        silver: {
-          50:  '#FAFBFC',
-          100: '#F3F5F8',
-          200: '#E6EAEF',
-          300: '#D2D9E2',
-          400: '#B7C3D2',
-          500: '#9AA9BC',
-          600: '#7C8CA2',
-          700: '#5B6B80',
-        },
+        // Sampled from the Figma export and the logo artwork rather than
+        // estimated, so the build matches the design rather than resembling it.
         brand: {
-          blue: '#5B93D6',
-          deep: '#3D7FC4',
-          dark: '#2C5F97',
-          sky:  '#EEF3FA',
-          mist: '#F5F7FA',
+          DEFAULT: '#FFD51E',   // the logo's own yellow
+          ink: '#E3A81B',       // eyebrow text: darker, so it stays legible
         },
-        accent: '#5B93D6',
-        ink: '#1F2733',
+        cream: {
+          DEFAULT: '#FFFDF0',   // hero background
+          nav: '#FCF8DE',       // the rounded nav pill
+          card: '#FFFCF5',      // the three "how it works" cards
+        },
+        ink: {
+          DEFAULT: '#1A1A1A',
+          soft: '#3D3D3D',
+        },
+        wa: '#25D366',
       },
       fontFamily: {
-        sans: ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Outfit', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },
-      maxWidth: { content: '1200px' },
-      keyframes: {
-        // Bubbles drift upward and fade, so the background has life without
-        // asking for attention.
-        rise: {
-          '0%':   { transform: 'translateY(0) scale(1)', opacity: '0' },
-          '10%':  { opacity: '0.30' },
-          '90%':  { opacity: '0.18' },
-          '100%': { transform: 'translateY(-120vh) scale(1.15)', opacity: '0' },
-        },
-      },
-      animation: {
-        rise: 'rise linear infinite',
-      },
+      maxWidth: { wrap: '1280px' },
     },
   },
   plugins: [],

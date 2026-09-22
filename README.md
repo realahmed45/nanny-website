@@ -1,32 +1,47 @@
-# Nanny in Paradise — website
+# Nanny In Paradise — website
 
-Marketing site for Nanny in Paradise: verified childcare in Bali, booked over
-WhatsApp. React + Vite + Tailwind, three routes (`/`, `/profile`, `/contact`).
+The public marketing site: one page, built from the Figma design, with every
+button opening the same WhatsApp conversation.
 
-## Running it
+```
+npm install
+npm run dev      # local, with hot reload
+npm run build    # production build into dist/
+```
 
-    npm install
-    npm run dev        # http://localhost:5173
-    npm run build      # production build into dist/
+React + Vite + Tailwind, deployed on Vercel.
 
-## The contact form
+## The WhatsApp number
 
-Submissions go to [Formspree](https://formspree.io). Copy `.env.example` to
-`.env` and set `VITE_FORMSPREE_ID` to the id from your form endpoint. Until
-that is set the form tells you it is not connected instead of silently losing
-messages.
+Defined once, in `src/lib/whatsapp.js`. Every button on the page reads it
+from there, so changing the number is a single edit.
 
-On Vercel the same value goes in Project → Settings → Environment Variables.
+The link carries `?text=nanny` because the bot stays silent until it hears
+that word — a visitor arriving from the site lands in a conversation that
+has already started rather than one that ignores them.
 
-## The background
+On desktop the link points at `web.whatsapp.com` instead of `wa.me`, which
+otherwise shows an interstitial before the chat opens.
 
-White, with silver bubbles drifting upward behind everything
-(`src/components/Bubbles.jsx`). They are deliberately faint: they sit behind
-live text, so they read as texture in the paper rather than objects on top of
-it. Anyone whose system asks for reduced motion gets them still.
+## Structure
 
-## The logo
+```
+src/
+  App.jsx                 the page, in the order the design lays it out
+  lib/whatsapp.js         the number and the prefilled word
+  components/             Navbar, Footer, WhatsAppButton
+  sections/               Hero, Gallery, HowItWorks
+public/img/
+  logo.png                background removed
+  toys-strip.png          cropped to the artwork, 1440x209
+  gallery/                photography from the Figma export
+```
 
-`public/logo.svg`, drawn rather than photographed — a sheltering arc over a
-child, inside a silver bubble that ties it to the page. SVG so it stays sharp
-at any size, including as the favicon.
+## Design notes
+
+Colours were sampled from the Figma PDF rather than estimated: the hero
+cream is `#FFFDF0`, the nav pill `#FCF8DE`, the cards `#FFFCF5`, and the
+brand yellow `#FFD51E` is taken from the logo itself. The typeface is Outfit.
+
+The toy strip is drawn on white, so it is composited with `mix-blend-mode:
+multiply` to sit on the cream without a visible seam.
