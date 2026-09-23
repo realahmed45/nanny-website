@@ -38,28 +38,28 @@ export default function Gallery() {
             height so the two sides finish level. */}
         <div className="mb-5 grid gap-5 sm:grid-cols-2 sm:items-stretch">
           <Tile
-            src="/img/gallery/g14.jpeg"
-            alt="A nanny crouching in the grass with two small children in red sun hats"
+            src="/img/gallery/beach.jpg"
+            alt="A nanny walking along the beach at sunset with a small boy"
             ratio="aspect-[4/3] sm:aspect-[62/93]"
           />
           <div className="grid grid-cols-2 grid-rows-2 gap-5">
-            <Tile src="/img/gallery/g17.jpeg" alt="A nanny reading on a sofa with two young girls" />
-            <Tile src="/img/gallery/g05.jpeg" alt="A nanny blowing bubbles in a garden with a toddler" />
-            <Tile src="/img/gallery/g10.jpeg" alt="A nanny playing indoors with a baby" />
-            <Tile src="/img/gallery/g01.jpeg" alt="A nanny and a young girl pointing at the sky in a sunlit field" />
+            <Tile src="/img/gallery/pool.jpg" alt="A nanny in a pool holding a toddler wearing armbands" />
+            <Tile src="/img/gallery/komodo.jpg" alt="A nanny and a little girl walking through a Balinese playground" />
+            <Tile src="/img/gallery/homework.jpg" alt="A nanny helping a girl with homework at a laptop" />
+            <Tile src="/img/gallery/reading.jpg" alt="A nanny reading an Indonesian storybook with a toddler" />
           </div>
         </div>
 
         {/* Row 2 — two wide frames. */}
         <div className="mb-5 grid gap-5 sm:grid-cols-2">
           <Tile
-            src="/img/gallery/g02.jpeg"
-            alt="A nanny building with toy blocks beside a boy on a living room floor"
+            src="/img/gallery/highchair.jpg"
+            alt="A young girl in a high chair being served lunch"
             ratio="aspect-[16/10]"
           />
           <Tile
-            src="/img/gallery/g00.jpeg"
-            alt="A girl hugging her nanny while a toddler plays nearby"
+            src="/img/gallery/bench.jpg"
+            alt="A nanny laughing with a toddler on a park bench"
             ratio="aspect-[16/10]"
           />
         </div>
@@ -74,29 +74,29 @@ export default function Gallery() {
         {/* Row 3 — two wide frames. */}
         <div className="mb-5 grid gap-5 sm:grid-cols-2">
           <Tile
-            src="/img/gallery/g18.jpeg"
-            alt="A child running towards a smiling nanny in a park"
+            src="/img/gallery/flying.jpg"
+            alt="A nanny lifting a laughing child on the grass"
             ratio="aspect-[3/2]"
           />
           <Tile
-            src="/img/gallery/g06.jpeg"
-            alt="A nanny feeding a baby seated on the floor"
+            src="/img/gallery/swing.jpg"
+            alt="A nanny pushing a boy on a playground swing"
             ratio="aspect-[3/2]"
           />
         </div>
 
         {/* Row 4 — four narrow frames. */}
         <div className="mb-5 grid grid-cols-2 gap-5 lg:grid-cols-4">
-          <Tile src="/img/gallery/g15.jpeg" alt="A nanny cradling a sleeping baby" ratio="aspect-[4/3] lg:aspect-[2/3]" />
-          <Tile src="/img/gallery/g13.jpeg" alt="A child playing with toy animals at a table" ratio="aspect-[4/3] lg:aspect-[2/3]" />
-          <Tile src="/img/gallery/g16.jpeg" alt="Children playing with bubble wands on a picnic blanket" ratio="aspect-[4/3] lg:aspect-[2/3]" />
-          <Tile src="/img/gallery/g12.jpeg" alt="A nanny walking through long grass with a child" ratio="aspect-[4/3] lg:aspect-[2/3]" />
+          <Tile src="/img/gallery/seesaw.jpg" alt="A grandmother and a girl on a seesaw in a park" ratio="aspect-[4/3] lg:aspect-[2/3]" />
+          <Tile src="/img/gallery/cooking.jpg" alt="A nanny helping a little girl with her meal" ratio="aspect-[4/3] lg:aspect-[2/3]" />
+          <Tile src="/img/gallery/hug.jpg" alt="A nanny in a headscarf hugging a smiling girl" ratio="aspect-[4/3] lg:aspect-[2/3]" />
+          <Tile src="/img/gallery/baby.jpg" alt="A nanny in a headscarf holding a baby in a garden" ratio="aspect-[4/3] lg:aspect-[2/3]" />
         </div>
 
         {/* Row 5 — two wide frames. */}
         <div className="grid gap-5 sm:grid-cols-2">
-          <Tile src="/img/gallery/g03.jpeg" alt="A nanny lifting a baby in a garden" ratio="aspect-[3/2]" />
-          <Tile src="/img/gallery/g11.jpeg" alt="A nanny lifting a baby into the air on a sunny path" ratio="aspect-[3/2]" />
+          <Tile src="/img/gallery/tablet.jpg" alt="A nanny teaching two boys using a tablet outdoors" ratio="aspect-[3/2]" />
+          <Tile src="/img/gallery/sandcastle.jpg" alt="A nanny and a small boy building a sandcastle" ratio="aspect-[3/2]" />
         </div>
       </div>
     </section>
@@ -114,7 +114,7 @@ function Banner() {
   return (
     <div className="relative isolate my-8 grid min-h-[320px] place-items-center overflow-hidden rounded-[20px] lg:my-[54px] lg:min-h-[520px]">
       <img
-        src="/img/gallery/g08.jpeg"
+        src="/img/gallery/banner.jpg"
         alt=""
         aria-hidden="true"
         loading="lazy"

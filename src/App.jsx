@@ -2,7 +2,7 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Hero, { ToyStrip } from './sections/Hero.jsx'
 import Gallery from './sections/Gallery.jsx'
-import HowItWorks from './sections/HowItWorks.jsx'
+import Services from './sections/Services.jsx'
 
 /**
  * One page, in the order the design lays it out.
@@ -28,7 +28,7 @@ export default function App() {
       <main id="main">
         <Hero />
         <Gallery />
-        <HowItWorks />
+        <Services />
         <ToyStrip />
       </main>
 

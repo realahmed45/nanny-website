@@ -4,7 +4,7 @@ import { whatsappUrl } from '../lib/whatsapp.js'
 const LINKS = [
   { href: '#top', label: 'Home' },
   { href: '#gallery', label: 'Gallery' },
-  { href: '#how-it-works', label: 'How It Works' },
+  { href: '#services', label: 'How It Works' },
 ]
 
 export default function Footer() {
